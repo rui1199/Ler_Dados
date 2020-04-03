@@ -8,20 +8,34 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE =  "pt.ipg.ler_dados.MESSAGE";
+
+    private EditText editTextnome;
+    private EditText editTextidade;
+    private EditText editTexttele;
+    private EditText editTextemail;
+    private EditText editTextpeso;
+    private EditText editTextaltura;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+         editTextnome =(EditText) findViewById(R.id.editTextnome);
+         editTexttele =(EditText) findViewById(R.id.editTexttele);
+         editTextemail =(EditText) findViewById(R.id.editTextemail);
+         editTextidade =(EditText) findViewById(R.id.editTextidade);
+         editTextpeso =(EditText) findViewById(R.id.editTextpeso);
+         editTextaltura =(EditText) findViewById(R.id.editTextaltura);
     }
     public void onClickBotaoEnviar(View view) {
 
-        EditText editTextnome =(EditText) findViewById(R.id.editTextnome);
+        /*EditText editTextnome =(EditText) findViewById(R.id.editTextnome);
         EditText editTexttele =(EditText) findViewById(R.id.editTexttele);
         EditText editTextemail =(EditText) findViewById(R.id.editTextemail);
         EditText editTextidade =(EditText) findViewById(R.id.editTextidade);
         EditText editTextpeso =(EditText) findViewById(R.id.editTextpeso);
-        EditText editTextaltura =(EditText) findViewById(R.id.editTextaltura);
+        EditText editTextaltura =(EditText) findViewById(R.id.editTextaltura);*/
 
         String mensagem1 = editTextnome.getText().toString();
         String mensagem2 = editTexttele.getText().toString();
@@ -40,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         parametros.putString("Peso", mensagem5);
         parametros.putString("Altura", mensagem6);
 
-        intent.putExtra(EXTRA_MESSAGE, parametros);
+        intent.putExtras(parametros);
 
         startActivity(intent);
     }

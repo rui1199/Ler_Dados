@@ -13,7 +13,8 @@
         android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="textViewnome" />
 
     <TextView
         android:id="@+id/textViewtelefone"
@@ -22,44 +23,46 @@
         android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewnome" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewnome"
+        tools:text="textViewtelefone" />
 
     <TextView
-        android:id="@+id/textView1email"
+        android:id="@+id/textViewemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewtelefone" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewtelefone"
+        tools:text="textViewemail" />
 
     <TextView
         android:id="@+id/textViewidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1email" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewemail"
+        tools:text="textViewidade" />
 
     <TextView
         android:id="@+id/textViewpeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewidade" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewidade"
+        tools:text="textViewpeso" />
 
     <TextView
         android:id="@+id/textViewaltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewpeso" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewpeso"
+        tools:text="textViewaltura" />
 </androidx.constraintlayout.widget.ConstraintLayout>
