@@ -18,10 +18,10 @@
         android:ems="10"
         android:hint="@string/edit_telef"
         android:inputType="textPersonName"
-        android:text="telemovel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextnome" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextnome"
+        tools:text="telemovel" />
 
     <EditText
         android:id="@+id/editTextemail"
@@ -35,10 +35,10 @@
         android:ems="10"
         android:hint="@string/edit_email"
         android:inputType="textPersonName"
-        android:text="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTexttele" />
+        app:layout_constraintTop_toBottomOf="@+id/editTexttele"
+        tools:text="E_mail" />
 
     <EditText
         android:id="@+id/editTextpeso"
@@ -52,10 +52,10 @@
         android:ems="10"
         android:hint="@string/edit_peso"
         android:inputType="textPersonName"
-        android:text="Peso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextidade" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextidade"
+        tools:text="Peso" />
 
     <EditText
         android:id="@+id/editTextnome"
@@ -69,10 +69,10 @@
         android:ems="10"
         android:hint="@string/edit_nome"
         android:inputType="textPersonName"
-        android:text="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nome" />
 
     <EditText
         android:id="@+id/editTextidade"
@@ -86,10 +86,10 @@
         android:ems="10"
         android:hint="@string/edit_idade"
         android:inputType="textPersonName"
-        android:text="Idade"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextemail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextemail"
+        tools:text="Idade" />
 
     <Button
         android:id="@+id/button7"
@@ -97,14 +97,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
+        android:layout_marginTop="189dp"
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:layout_marginBottom="80dp"
-        android:onClick="sendMessage"
+        android:onClick="onClickBotaoEnviar"
         android:text="@string/button_send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextaltura"
         tools:text="Enviar" />
 
     <EditText
@@ -119,8 +121,8 @@
         android:ems="10"
         android:hint="@string/edit_altura"
         android:inputType="textPersonName"
-        android:text="Altura"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextpeso" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextpeso"
+        tools:text="Altura" />
 </androidx.constraintlayout.widget.ConstraintLayout>

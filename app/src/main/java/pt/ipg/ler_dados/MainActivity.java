@@ -14,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void sendMessage(View view) {
-        Intent intent = new Intent(this, ecracommensagemfinal.class);
+    public void onClickBotaoEnviar(View view) {
 
         EditText editTextnome =(EditText) findViewById(R.id.editTextnome);
         EditText editTexttele =(EditText) findViewById(R.id.editTexttele);
@@ -31,12 +30,17 @@ public class MainActivity extends AppCompatActivity {
         String mensagem5 = editTextpeso.getText().toString();
         String mensagem6 = editTextaltura.getText().toString();
 
-        intent.putExtra(EXTRA_MESSAGE, mensagem1);
-        intent.putExtra(EXTRA_MESSAGE, mensagem2);
-        intent.putExtra(EXTRA_MESSAGE, mensagem3);
-        intent.putExtra(EXTRA_MESSAGE, mensagem4);
-        intent.putExtra(EXTRA_MESSAGE, mensagem5);
-        intent.putExtra(EXTRA_MESSAGE, mensagem6);
+        Intent intent = new Intent(getApplicationContext(), ecracommensagemfinal.class);
+        Bundle parametros = new Bundle();
+
+        parametros.putString("Nome", mensagem1);
+        parametros.putString("Telemovel", mensagem2);
+        parametros.putString("E-mail", mensagem3);
+        parametros.putString("Idade", mensagem4);
+        parametros.putString("Peso", mensagem5);
+        parametros.putString("Altura", mensagem6);
+
+        intent.putExtra(EXTRA_MESSAGE, parametros);
 
         startActivity(intent);
     }

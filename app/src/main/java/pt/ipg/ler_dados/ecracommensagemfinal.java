@@ -14,12 +14,14 @@ public class ecracommensagemfinal extends AppCompatActivity {
         setContentView(R.layout.activity_ecracommensagemfinal);
 
         Intent intent = getIntent();
-        String mensagem1 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String mensagem2 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String mensagem3 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String mensagem4 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String mensagem5 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        String mensagem6 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        Bundle parametros = intent.getExtras();
+
+        String mensagem1 = parametros.getString("Nome");
+        String mensagem2 = parametros.getString("Telemovel");
+        String mensagem3 = parametros.getString("E_mail");
+        String mensagem4 = parametros.getString("Idade");
+        String mensagem5 = parametros.getString("Peso");
+        String mensagem6 = parametros.getString("Altura");
 
         TextView textViewnome = findViewById(R.id.textViewnome);
         textViewnome.setText(mensagem1);
