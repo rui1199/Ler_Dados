@@ -9,6 +9,13 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    public static final String EXTRA_NOME = "pt.ipg.ler_dados.NOME";
+    public static final String EXTRA_ALTURA ="pt.ipg.ler_dados.ALTURA" ;
+    public static final String EXTRA_PESO = "pt.ipg.ler_dados.PESO";
+    public static final String EXTRA_IDADE ="pt.ipg.ler_dados.IDADE" ;
+    public static final String EXTRA_EMAIL ="pt.ipg.ler_dados.EMAIL" ;
+    public static final String EXTRA_TELE = "pt.ipg.ler_dados.TELE";
     private EditText editTextnome;
     private EditText editTextidade;
     private EditText editTexttele;
@@ -73,16 +80,12 @@ public class MainActivity extends AppCompatActivity {
         }
         String mensagem6 = editTextaltura.getText().toString();
 
-       /* Bundle parametros = new Bundle();
-
-        parametros.putString("Nome", mensagem1);
-        parametros.putString("Telemovel", mensagem2);
-        parametros.putString("E-mail", mensagem3);
-        parametros.putString("Idade", mensagem4);
-        parametros.putString("Peso", mensagem5);
-        parametros.putString("Altura", mensagem6);
-
-        intent.putExtras(parametros);*/
+        intent.putExtra(EXTRA_NOME, mensagem1);
+        intent.putExtra(EXTRA_TELE, mensagem2);
+        intent.putExtra(EXTRA_EMAIL, mensagem3);
+        intent.putExtra(EXTRA_IDADE, mensagem4);
+        intent.putExtra(EXTRA_PESO, mensagem5);
+        intent.putExtra(EXTRA_ALTURA, mensagem6);
 
         startActivity(intent);
     }

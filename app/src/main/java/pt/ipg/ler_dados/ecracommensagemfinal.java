@@ -13,29 +13,28 @@ public class ecracommensagemfinal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecracommensagemfinal);
 
-        Intent intent = getIntent();/*
-        Bundle parametros = intent.getExtras();
+        Intent intent = getIntent();
 
-        String mensagem1  = parametros.getString("Nome");
-        String mensagem2 = parametros.getString("Telemovel");
-        String mensagem3 = parametros.getString("E_mail");
+        String mensagem1 = intent.getStringExtra(MainActivity.EXTRA_NOME);
+        String mensagem2 = intent.getStringExtra(MainActivity.EXTRA_TELE);
+        String mensagem3 = intent.getStringExtra(MainActivity.EXTRA_EMAIL);
+        String mensagem4 = intent.getStringExtra(MainActivity.EXTRA_IDADE);
+        String mensagem5 = intent.getStringExtra(MainActivity.EXTRA_PESO);
+        String mensagem6 = intent.getStringExtra(MainActivity.EXTRA_ALTURA);
 
-        String mensagem4 = parametros.getString("Idade");
-        String mensagem5 = parametros.getString("Peso");
-        String mensagem6 = parametros.getString("Altura");
 
         TextView textViewnome = findViewById(R.id.textViewnome);
         textViewnome.setText(mensagem1 );
         TextView textViewtelefone = findViewById(R.id.textViewtelefone);
-        textViewnome.setText(mensagem2);
+        textViewtelefone.setText(mensagem2);
         TextView textViewemail = findViewById(R.id.textViewemail);
-        textViewnome.setText(mensagem3);
+        textViewemail.setText(mensagem3);
         TextView textViewidade = findViewById(R.id.textViewidade);
-        textViewnome.setText(mensagem4);
+        textViewidade.setText(mensagem4);
         TextView textViewnpeso = findViewById(R.id.textViewpeso);
-        textViewnome.setText(mensagem5);
-       // TextView textViewaltura = findViewById(R.id.editTextaltura);
-        textViewnome.setText(mensagem6);
-       // string nome = intent.getStringExtra(MainActivity.nome);*/
+        textViewnpeso.setText(mensagem5);
+        TextView textViewaltura = findViewById(R.id.textViewaltura);
+        textViewaltura.setText(mensagem6);
+
     }
 }
