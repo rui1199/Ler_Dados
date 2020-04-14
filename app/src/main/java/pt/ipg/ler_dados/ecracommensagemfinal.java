@@ -13,7 +13,7 @@ public class ecracommensagemfinal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecracommensagemfinal);
 
-        Intent intent = getIntent();
+        Intent intent = getIntent();/*
         Bundle parametros = intent.getExtras();
 
         String mensagem1  = parametros.getString("Nome");
@@ -34,7 +34,8 @@ public class ecracommensagemfinal extends AppCompatActivity {
         textViewnome.setText(mensagem4);
         TextView textViewnpeso = findViewById(R.id.textViewpeso);
         textViewnome.setText(mensagem5);
-        TextView textViewaltura = findViewById(R.id.editTextaltura);
+       // TextView textViewaltura = findViewById(R.id.editTextaltura);
         textViewnome.setText(mensagem6);
+       // string nome = intent.getStringExtra(MainActivity.nome);*/
     }
 }
