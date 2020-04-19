@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ler_Dados</string>
+    <string name="edit_nome">Diga o nome</string>
+    <string name="edit_telef">Diga o telefone</string>
+    <string name="edit_email">Diga o e-mail</string>
+    <string name="edit_idade">Diga a idade</string>
+    <string name="edit_peso">Diga o peso</string>
+    <string name="edit_altura">Diga a altura</string>
+    <string name="button_send">Enviar</string>
+</resources>
